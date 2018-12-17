@@ -51,6 +51,8 @@ namespace Lab4_1
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.buttonEsq = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -161,14 +163,14 @@ namespace Lab4_1
             this.listBox1.Location = new System.Drawing.Point(236, 465);
             this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(811, 228);
+            this.listBox1.Size = new System.Drawing.Size(811, 148);
             this.listBox1.TabIndex = 12;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(85, 343);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(209, 68);
             this.button3.TabIndex = 13;
@@ -179,7 +181,7 @@ namespace Lab4_1
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(837, 303);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(209, 22);
             this.textBox5.TabIndex = 14;
@@ -228,7 +230,7 @@ namespace Lab4_1
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(728, 382);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(152, 22);
@@ -238,7 +240,7 @@ namespace Lab4_1
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(664, 340);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(132, 22);
             this.textBox7.TabIndex = 20;
@@ -247,7 +249,7 @@ namespace Lab4_1
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(664, 418);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(319, 22);
@@ -264,11 +266,33 @@ namespace Lab4_1
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // buttonSave
+            // 
+            this.buttonSave.Location = new System.Drawing.Point(123, 618);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(201, 32);
+            this.buttonSave.TabIndex = 23;
+            this.buttonSave.Text = "Сохранение отчета";
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.ButtonSave);
+            // 
+            // buttonEsq
+            // 
+            this.buttonEsq.Location = new System.Drawing.Point(822, 618);
+            this.buttonEsq.Name = "buttonEsq";
+            this.buttonEsq.Size = new System.Drawing.Size(132, 32);
+            this.buttonEsq.TabIndex = 24;
+            this.buttonEsq.Text = "Выход";
+            this.buttonEsq.UseVisualStyleBackColor = true;
+            this.buttonEsq.Click += new System.EventHandler(this.buttonExit);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1281, 705);
+            this.ClientSize = new System.Drawing.Size(1229, 739);
+            this.Controls.Add(this.buttonEsq);
+            this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
@@ -324,6 +348,8 @@ namespace Lab4_1
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Button buttonEsq;
     }
 }
 
